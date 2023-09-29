@@ -1,8 +1,14 @@
-import { useCodeGridMarkdown } from '.';
+import { useCodeGridMarkdown } from './packages/use-codegrid-markdown/src';
+import { useCodeGridPreview } from './packages/use-codegrid-preview/src';
 
 const cgMdCtx = useCodeGridMarkdown();
+const cgPreviewCtx = useCodeGridPreview();
 
-console.log(cgMdCtx.toArticleHtml(getSampleMd()));
+const articleHtml = cgMdCtx.toArticleHtml(getSampleMd());
+
+const html = cgPreviewCtx.toPreviewHtml(articleHtml);
+
+console.log(html);
 
 function getSampleMd() {
   return `## はじめに

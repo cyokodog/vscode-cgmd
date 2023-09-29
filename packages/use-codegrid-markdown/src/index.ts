@@ -7,7 +7,7 @@ const renderer = new CodeGridMarkdown();
 
 export const useCodeGridMarkdown = () => {
   return {
-    toHtml(md: string) {
+    toArticleHtml(md: string) {
       const { data: _, content } = matter(md);
       const html = renderer.render(content);
       const doc = new JSDOM(html).window.document;
