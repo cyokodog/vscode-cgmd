@@ -1,0 +1,19 @@
+{
+  "name": "use-codegrid-markdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/example.ts"
+  },
+  "dependencies": {
+    "codegrid-markdown": "^5.0.0",
+    "gray-matter": "^4.0.3",
+    "jsdom": "^22.1.0"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
